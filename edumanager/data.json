@@ -1,0 +1,1133 @@
+{
+  "users": {
+    "admin@school.edu": {
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin User",
+      "id": "admin_1"
+    },
+    "rajesh@school.edu": {
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Dr. Rajesh Kumar",
+      "id": "TCH-001"
+    },
+    "meera@school.edu": {
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Prof. Meera Nair",
+      "id": "TCH-002"
+    },
+    "suresh@school.edu": {
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Dr. Suresh Iyer",
+      "id": "TCH-003"
+    },
+    "lakshmi@school.edu": {
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Prof. Lakshmi Rao",
+      "id": "TCH-004"
+    },
+    "ananya@school.edu": {
+      "password": "student123",
+      "role": "student",
+      "name": "Ananya Sharma",
+      "id": "STU-001"
+    },
+    "rohan@school.edu": {
+      "password": "student123",
+      "role": "student",
+      "name": "Rohan Mehta",
+      "id": "STU-002"
+    },
+    "priya@school.edu": {
+      "password": "student123",
+      "role": "student",
+      "name": "Priya Patel",
+      "id": "STU-003"
+    }
+  },
+  "departments": [
+    {
+      "id": "DEPT-01",
+      "name": "Computer Science",
+      "code": "CS",
+      "hod": "TCH-001"
+    },
+    {
+      "id": "DEPT-02",
+      "name": "Information Technology",
+      "code": "IT",
+      "hod": "TCH-003"
+    },
+    {
+      "id": "DEPT-03",
+      "name": "Business Administration",
+      "code": "BA",
+      "hod": "TCH-004"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "TCH-001",
+      "name": "Dr. Rajesh Kumar",
+      "email": "rajesh@school.edu",
+      "phone": "+91 91234 56789",
+      "dept_id": "DEPT-01",
+      "specialization": "Data Structures & Algorithms",
+      "exp": 12,
+      "joined": "2012-07-01"
+    },
+    {
+      "id": "TCH-002",
+      "name": "Prof. Meera Nair",
+      "email": "meera@school.edu",
+      "phone": "+91 81234 56789",
+      "dept_id": "DEPT-01",
+      "specialization": "Database Systems",
+      "exp": 8,
+      "joined": "2016-07-01"
+    },
+    {
+      "id": "TCH-003",
+      "name": "Dr. Suresh Iyer",
+      "email": "suresh@school.edu",
+      "phone": "+91 71234 56789",
+      "dept_id": "DEPT-02",
+      "specialization": "Networks & Security",
+      "exp": 15,
+      "joined": "2009-07-01"
+    },
+    {
+      "id": "TCH-004",
+      "name": "Prof. Lakshmi Rao",
+      "email": "lakshmi@school.edu",
+      "phone": "+91 61234 56789",
+      "dept_id": "DEPT-03",
+      "specialization": "Management Studies",
+      "exp": 10,
+      "joined": "2014-07-01"
+    }
+  ],
+  "courses": [
+    {
+      "id": "CRS-001",
+      "name": "B.Tech Computer Science",
+      "code": "BTCS",
+      "dept_id": "DEPT-01",
+      "duration_sems": 8,
+      "credits_total": 180,
+      "description": "4-year undergraduate program in CS"
+    },
+    {
+      "id": "CRS-002",
+      "name": "B.Tech Information Technology",
+      "code": "BTIT",
+      "dept_id": "DEPT-02",
+      "duration_sems": 8,
+      "credits_total": 160,
+      "description": "4-year undergraduate IT program"
+    },
+    {
+      "id": "CRS-003",
+      "name": "Master of Business Administration",
+      "code": "MBA",
+      "dept_id": "DEPT-03",
+      "duration_sems": 4,
+      "credits_total": 120,
+      "description": "2-year MBA program"
+    },
+    {
+      "id": "CRS-004",
+      "name": "Master of Computer Applications",
+      "code": "MCA",
+      "dept_id": "DEPT-01",
+      "duration_sems": 4,
+      "credits_total": 120,
+      "description": "2-year MCA program"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "SUB-001",
+      "name": "Engineering Mathematics I",
+      "code": "BTCS101",
+      "course_id": "CRS-001",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-002",
+      "name": "Programming Fundamentals",
+      "code": "BTCS102",
+      "course_id": "CRS-001",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-003",
+      "name": "Digital Logic",
+      "code": "BTCS103",
+      "course_id": "CRS-001",
+      "semester": 1,
+      "credits": 3,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-004",
+      "name": "Communication Skills",
+      "code": "BTCS104",
+      "course_id": "CRS-001",
+      "semester": 1,
+      "credits": 2,
+      "teacher_id": "TCH-004",
+      "type": "elective",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-005",
+      "name": "Engineering Mathematics II",
+      "code": "BTCS201",
+      "course_id": "CRS-001",
+      "semester": 2,
+      "credits": 4,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-006",
+      "name": "Data Structures",
+      "code": "BTCS202",
+      "course_id": "CRS-001",
+      "semester": 2,
+      "credits": 4,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-007",
+      "name": "Object Oriented Programming",
+      "code": "BTCS203",
+      "course_id": "CRS-001",
+      "semester": 2,
+      "credits": 3,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-008",
+      "name": "Database Management Systems",
+      "code": "BTCS301",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "credits": 4,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-009",
+      "name": "Operating Systems",
+      "code": "BTCS302",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "credits": 3,
+      "teacher_id": "TCH-003",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-010",
+      "name": "Computer Networks",
+      "code": "BTCS303",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "credits": 3,
+      "teacher_id": "TCH-003",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-011",
+      "name": "Software Engineering",
+      "code": "BTCS304",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "credits": 3,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-012",
+      "name": "Mathematics for IT",
+      "code": "BTIT101",
+      "course_id": "CRS-002",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-013",
+      "name": "Introduction to Programming",
+      "code": "BTIT102",
+      "course_id": "CRS-002",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-014",
+      "name": "Web Technologies",
+      "code": "BTIT103",
+      "course_id": "CRS-002",
+      "semester": 1,
+      "credits": 3,
+      "teacher_id": "TCH-003",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-015",
+      "name": "Network Security",
+      "code": "BTIT201",
+      "course_id": "CRS-002",
+      "semester": 2,
+      "credits": 4,
+      "teacher_id": "TCH-003",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-016",
+      "name": "Database Systems",
+      "code": "BTIT202",
+      "course_id": "CRS-002",
+      "semester": 2,
+      "credits": 4,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-017",
+      "name": "Management Principles",
+      "code": "MBA101",
+      "course_id": "CRS-003",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-004",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-018",
+      "name": "Financial Accounting",
+      "code": "MBA102",
+      "course_id": "CRS-003",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-004",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-019",
+      "name": "Business Communication",
+      "code": "MBA103",
+      "course_id": "CRS-003",
+      "semester": 1,
+      "credits": 3,
+      "teacher_id": "TCH-004",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-020",
+      "name": "Marketing Management",
+      "code": "MBA201",
+      "course_id": "CRS-003",
+      "semester": 2,
+      "credits": 4,
+      "teacher_id": "TCH-004",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-021",
+      "name": "Operations Research",
+      "code": "MBA202",
+      "course_id": "CRS-003",
+      "semester": 2,
+      "credits": 3,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-022",
+      "name": "Advanced Mathematics",
+      "code": "MCA101",
+      "course_id": "CRS-004",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-023",
+      "name": "Advanced Programming",
+      "code": "MCA102",
+      "course_id": "CRS-004",
+      "semester": 1,
+      "credits": 4,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-024",
+      "name": "System Analysis & Design",
+      "code": "MCA103",
+      "course_id": "CRS-004",
+      "semester": 1,
+      "credits": 3,
+      "teacher_id": "TCH-002",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-025",
+      "name": "Algorithms",
+      "code": "MCA201",
+      "course_id": "CRS-004",
+      "semester": 2,
+      "credits": 4,
+      "teacher_id": "TCH-001",
+      "type": "core",
+      "max_marks": 100,
+      "passing_marks": 40
+    },
+    {
+      "id": "SUB-026",
+      "name": "Cloud Computing",
+      "code": "MCA202",
+      "course_id": "CRS-004",
+      "semester": 2,
+      "credits": 3,
+      "teacher_id": "TCH-003",
+      "type": "elective",
+      "max_marks": 100,
+      "passing_marks": 40
+    }
+  ],
+  "students": [
+    {
+      "id": "STU-001",
+      "name": "Ananya Sharma",
+      "email": "ananya@school.edu",
+      "phone": "+91 98765 43210",
+      "dob": "2002-03-15",
+      "course_id": "CRS-001",
+      "current_sem": 3,
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "roll": "BTCS2022001",
+      "admission_year": 2022
+    },
+    {
+      "id": "STU-002",
+      "name": "Rohan Mehta",
+      "email": "rohan@school.edu",
+      "phone": "+91 87654 32109",
+      "dob": "2001-11-20",
+      "course_id": "CRS-002",
+      "current_sem": 2,
+      "city": "Delhi",
+      "state": "Delhi",
+      "roll": "BTIT2022001",
+      "admission_year": 2022
+    },
+    {
+      "id": "STU-003",
+      "name": "Priya Patel",
+      "email": "priya@school.edu",
+      "phone": "+91 76543 21098",
+      "dob": "2002-07-08",
+      "course_id": "CRS-004",
+      "current_sem": 2,
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "roll": "MCA2023001",
+      "admission_year": 2023
+    },
+    {
+      "id": "STU-004",
+      "name": "Karan Singh",
+      "email": "karan@school.edu",
+      "phone": "+91 65432 10987",
+      "dob": "2001-01-25",
+      "course_id": "CRS-003",
+      "current_sem": 2,
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "roll": "MBA2023001",
+      "admission_year": 2023
+    },
+    {
+      "id": "STU-005",
+      "name": "Sneha Gupta",
+      "email": "sneha@school.edu",
+      "phone": "+91 54321 09876",
+      "dob": "2003-05-12",
+      "course_id": "CRS-001",
+      "current_sem": 3,
+      "city": "Pune",
+      "state": "Maharashtra",
+      "roll": "BTCS2022002",
+      "admission_year": 2022
+    },
+    {
+      "id": "STU-006",
+      "name": "Arjun Nair",
+      "email": "arjun@school.edu",
+      "phone": "+91 43210 98765",
+      "dob": "2002-09-30",
+      "course_id": "CRS-002",
+      "current_sem": 2,
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "roll": "BTIT2022002",
+      "admission_year": 2022
+    },
+    {
+      "id": "STU-007",
+      "name": "Divya Sharma",
+      "email": "divya@school.edu",
+      "phone": "+91 32109 87654",
+      "dob": "2003-01-18",
+      "course_id": "CRS-001",
+      "current_sem": 1,
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "roll": "BTCS2023001",
+      "admission_year": 2023
+    }
+  ],
+  "results": [
+    {
+      "id": "R001",
+      "student_id": "STU-001",
+      "subject_id": "SUB-001",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 38,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2022-09-15",
+      "status": "Pass"
+    },
+    {
+      "id": "R002",
+      "student_id": "STU-001",
+      "subject_id": "SUB-001",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 52,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2022-11-20",
+      "status": "Pass"
+    },
+    {
+      "id": "R003",
+      "student_id": "STU-001",
+      "subject_id": "SUB-002",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 35,
+      "max_marks": 40,
+      "graded_by": "TCH-002",
+      "date": "2022-09-16",
+      "status": "Pass"
+    },
+    {
+      "id": "R004",
+      "student_id": "STU-001",
+      "subject_id": "SUB-002",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 55,
+      "max_marks": 60,
+      "graded_by": "TCH-002",
+      "date": "2022-11-21",
+      "status": "Pass"
+    },
+    {
+      "id": "R005",
+      "student_id": "STU-001",
+      "subject_id": "SUB-003",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 32,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2022-09-17",
+      "status": "Pass"
+    },
+    {
+      "id": "R006",
+      "student_id": "STU-001",
+      "subject_id": "SUB-003",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 48,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2022-11-22",
+      "status": "Pass"
+    },
+    {
+      "id": "R007",
+      "student_id": "STU-001",
+      "subject_id": "SUB-004",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 18,
+      "max_marks": 20,
+      "graded_by": "TCH-004",
+      "date": "2022-09-18",
+      "status": "Pass"
+    },
+    {
+      "id": "R008",
+      "student_id": "STU-001",
+      "subject_id": "SUB-004",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 72,
+      "max_marks": 80,
+      "graded_by": "TCH-004",
+      "date": "2022-11-23",
+      "status": "Pass"
+    },
+    {
+      "id": "R009",
+      "student_id": "STU-001",
+      "subject_id": "SUB-005",
+      "semester": 2,
+      "exam_type": "internal",
+      "marks_obtained": 36,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2023-03-10",
+      "status": "Pass"
+    },
+    {
+      "id": "R010",
+      "student_id": "STU-001",
+      "subject_id": "SUB-005",
+      "semester": 2,
+      "exam_type": "end",
+      "marks_obtained": 50,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2023-05-20",
+      "status": "Pass"
+    },
+    {
+      "id": "R011",
+      "student_id": "STU-001",
+      "subject_id": "SUB-006",
+      "semester": 2,
+      "exam_type": "internal",
+      "marks_obtained": 39,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2023-03-12",
+      "status": "Pass"
+    },
+    {
+      "id": "R012",
+      "student_id": "STU-001",
+      "subject_id": "SUB-006",
+      "semester": 2,
+      "exam_type": "end",
+      "marks_obtained": 58,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2023-05-22",
+      "status": "Pass"
+    },
+    {
+      "id": "R013",
+      "student_id": "STU-001",
+      "subject_id": "SUB-007",
+      "semester": 2,
+      "exam_type": "internal",
+      "marks_obtained": 33,
+      "max_marks": 40,
+      "graded_by": "TCH-002",
+      "date": "2023-03-14",
+      "status": "Pass"
+    },
+    {
+      "id": "R014",
+      "student_id": "STU-001",
+      "subject_id": "SUB-007",
+      "semester": 2,
+      "exam_type": "end",
+      "marks_obtained": 49,
+      "max_marks": 60,
+      "graded_by": "TCH-002",
+      "date": "2023-05-24",
+      "status": "Pass"
+    },
+    {
+      "id": "R015",
+      "student_id": "STU-001",
+      "subject_id": "SUB-008",
+      "semester": 3,
+      "exam_type": "internal",
+      "marks_obtained": 37,
+      "max_marks": 40,
+      "graded_by": "TCH-002",
+      "date": "2023-09-15",
+      "status": "Pass"
+    },
+    {
+      "id": "R016",
+      "student_id": "STU-001",
+      "subject_id": "SUB-009",
+      "semester": 3,
+      "exam_type": "internal",
+      "marks_obtained": 28,
+      "max_marks": 40,
+      "graded_by": "TCH-003",
+      "date": "2023-09-17",
+      "status": "Fail"
+    },
+    {
+      "id": "R017",
+      "student_id": "STU-001",
+      "subject_id": "SUB-010",
+      "semester": 3,
+      "exam_type": "internal",
+      "marks_obtained": 34,
+      "max_marks": 40,
+      "graded_by": "TCH-003",
+      "date": "2023-09-19",
+      "status": "Pass"
+    },
+    {
+      "id": "R018",
+      "student_id": "STU-001",
+      "subject_id": "SUB-011",
+      "semester": 3,
+      "exam_type": "internal",
+      "marks_obtained": 36,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2023-09-21",
+      "status": "Pass"
+    },
+    {
+      "id": "R019",
+      "student_id": "STU-005",
+      "subject_id": "SUB-001",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 40,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2022-09-15",
+      "status": "Pass"
+    },
+    {
+      "id": "R020",
+      "student_id": "STU-005",
+      "subject_id": "SUB-001",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 58,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2022-11-20",
+      "status": "Pass"
+    },
+    {
+      "id": "R021",
+      "student_id": "STU-005",
+      "subject_id": "SUB-002",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 38,
+      "max_marks": 40,
+      "graded_by": "TCH-002",
+      "date": "2022-09-16",
+      "status": "Pass"
+    },
+    {
+      "id": "R022",
+      "student_id": "STU-005",
+      "subject_id": "SUB-002",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 57,
+      "max_marks": 60,
+      "graded_by": "TCH-002",
+      "date": "2022-11-21",
+      "status": "Pass"
+    },
+    {
+      "id": "R023",
+      "student_id": "STU-005",
+      "subject_id": "SUB-005",
+      "semester": 2,
+      "exam_type": "internal",
+      "marks_obtained": 40,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2023-03-10",
+      "status": "Pass"
+    },
+    {
+      "id": "R024",
+      "student_id": "STU-005",
+      "subject_id": "SUB-005",
+      "semester": 2,
+      "exam_type": "end",
+      "marks_obtained": 59,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2023-05-20",
+      "status": "Pass"
+    },
+    {
+      "id": "R025",
+      "student_id": "STU-002",
+      "subject_id": "SUB-012",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 30,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2022-09-15",
+      "status": "Pass"
+    },
+    {
+      "id": "R026",
+      "student_id": "STU-002",
+      "subject_id": "SUB-012",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 42,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2022-11-20",
+      "status": "Pass"
+    },
+    {
+      "id": "R027",
+      "student_id": "STU-002",
+      "subject_id": "SUB-013",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 28,
+      "max_marks": 40,
+      "graded_by": "TCH-002",
+      "date": "2022-09-16",
+      "status": "Fail"
+    },
+    {
+      "id": "R028",
+      "student_id": "STU-002",
+      "subject_id": "SUB-013",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 44,
+      "max_marks": 60,
+      "graded_by": "TCH-002",
+      "date": "2022-11-21",
+      "status": "Pass"
+    },
+    {
+      "id": "R029",
+      "student_id": "STU-003",
+      "subject_id": "SUB-022",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 25,
+      "max_marks": 40,
+      "graded_by": "TCH-001",
+      "date": "2023-09-15",
+      "status": "Fail"
+    },
+    {
+      "id": "R030",
+      "student_id": "STU-003",
+      "subject_id": "SUB-022",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 38,
+      "max_marks": 60,
+      "graded_by": "TCH-001",
+      "date": "2023-11-20",
+      "status": "Fail"
+    },
+    {
+      "id": "R031",
+      "student_id": "STU-003",
+      "subject_id": "SUB-023",
+      "semester": 1,
+      "exam_type": "internal",
+      "marks_obtained": 32,
+      "max_marks": 40,
+      "graded_by": "TCH-002",
+      "date": "2023-09-16",
+      "status": "Pass"
+    },
+    {
+      "id": "R032",
+      "student_id": "STU-003",
+      "subject_id": "SUB-023",
+      "semester": 1,
+      "exam_type": "end",
+      "marks_obtained": 47,
+      "max_marks": 60,
+      "graded_by": "TCH-002",
+      "date": "2023-11-21",
+      "status": "Pass"
+    }
+  ],
+  "attendance": {
+    "STU-001": {
+      "SUB-008": {
+        "present": 22,
+        "absent": 2,
+        "late": 1,
+        "total": 25
+      },
+      "SUB-009": {
+        "present": 18,
+        "absent": 5,
+        "late": 2,
+        "total": 25
+      },
+      "SUB-010": {
+        "present": 23,
+        "absent": 1,
+        "late": 1,
+        "total": 25
+      },
+      "SUB-011": {
+        "present": 21,
+        "absent": 3,
+        "late": 1,
+        "total": 25
+      }
+    },
+    "STU-002": {
+      "SUB-015": {
+        "present": 20,
+        "absent": 4,
+        "late": 1,
+        "total": 25
+      },
+      "SUB-016": {
+        "present": 22,
+        "absent": 2,
+        "late": 1,
+        "total": 25
+      }
+    },
+    "STU-003": {
+      "SUB-025": {
+        "present": 19,
+        "absent": 4,
+        "late": 2,
+        "total": 25
+      },
+      "SUB-026": {
+        "present": 21,
+        "absent": 3,
+        "late": 1,
+        "total": 25
+      }
+    },
+    "STU-004": {
+      "SUB-020": {
+        "present": 15,
+        "absent": 8,
+        "late": 2,
+        "total": 25
+      },
+      "SUB-021": {
+        "present": 17,
+        "absent": 6,
+        "late": 2,
+        "total": 25
+      }
+    },
+    "STU-005": {
+      "SUB-008": {
+        "present": 24,
+        "absent": 1,
+        "late": 0,
+        "total": 25
+      },
+      "SUB-009": {
+        "present": 22,
+        "absent": 2,
+        "late": 1,
+        "total": 25
+      },
+      "SUB-010": {
+        "present": 25,
+        "absent": 0,
+        "late": 0,
+        "total": 25
+      },
+      "SUB-011": {
+        "present": 23,
+        "absent": 1,
+        "late": 1,
+        "total": 25
+      }
+    },
+    "STU-006": {
+      "SUB-015": {
+        "present": 18,
+        "absent": 5,
+        "late": 2,
+        "total": 25
+      },
+      "SUB-016": {
+        "present": 20,
+        "absent": 3,
+        "late": 2,
+        "total": 25
+      }
+    },
+    "STU-007": {
+      "SUB-001": {
+        "present": 20,
+        "absent": 3,
+        "late": 2,
+        "total": 25
+      },
+      "SUB-002": {
+        "present": 22,
+        "absent": 2,
+        "late": 1,
+        "total": 25
+      },
+      "SUB-003": {
+        "present": 19,
+        "absent": 4,
+        "late": 2,
+        "total": 25
+      },
+      "SUB-004": {
+        "present": 24,
+        "absent": 1,
+        "late": 0,
+        "total": 25
+      }
+    }
+  },
+  "exams": [
+    {
+      "id": "EXM-001",
+      "name": "Internal Assessment I",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "date": "2023-09-15",
+      "exam_type": "internal",
+      "conducted_by": "TCH-001",
+      "status": "completed"
+    },
+    {
+      "id": "EXM-002",
+      "name": "Mid Semester Exam",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "date": "2023-10-20",
+      "exam_type": "mid",
+      "conducted_by": "TCH-001",
+      "status": "completed"
+    },
+    {
+      "id": "EXM-003",
+      "name": "End Semester Exam",
+      "course_id": "CRS-001",
+      "semester": 3,
+      "date": "2023-11-30",
+      "exam_type": "end",
+      "conducted_by": "admin_1",
+      "status": "upcoming"
+    },
+    {
+      "id": "EXM-004",
+      "name": "Internal Assessment I",
+      "course_id": "CRS-002",
+      "semester": 2,
+      "date": "2023-09-16",
+      "exam_type": "internal",
+      "conducted_by": "TCH-003",
+      "status": "completed"
+    },
+    {
+      "id": "EXM-005",
+      "name": "Internal Assessment I",
+      "course_id": "CRS-004",
+      "semester": 2,
+      "date": "2023-09-15",
+      "exam_type": "internal",
+      "conducted_by": "TCH-001",
+      "status": "completed"
+    }
+  ]
+}

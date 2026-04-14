@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EduManage — Sign In</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#EEF2FF 0%,#DBEAFE 50%,#EEF2FF 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;}
+.card{background:#fff;border-radius:20px;border:1.5px solid #DBEAFE;padding:36px 32px;width:420px;box-shadow:0 8px 40px rgba(37,99,235,.12);}
+.logo-row{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+.logo-box{width:44px;height:44px;background:linear-gradient(135deg,#2563EB,#1D4ED8);border-radius:12px;display:flex;align-items:center;justify-content:center;}
+.logo-box svg{width:24px;height:24px;fill:#fff;}
+.brand{font-size:24px;font-weight:800;color:#1A1F36;}.brand span{color:#2563EB;}
+.sub{font-size:12px;color:#8B92A9;margin-bottom:22px;}
+.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;}
+.rc{border:2px solid #E2E8F8;border-radius:12px;padding:14px 8px;cursor:pointer;text-align:center;background:#F8FAFF;transition:all .2s;}
+.rc:hover{border-color:#93C5FD;background:#EFF6FF;}
+.rc.on{border-color:#2563EB;background:#EFF6FF;}
+.rc svg{width:21px;height:21px;stroke:#2563EB;fill:none;stroke-width:2;display:block;margin:0 auto 6px;}
+.rc-n{font-size:12px;font-weight:700;color:#1A1F36;}
+.rc-s{font-size:10px;color:#8B92A9;margin-top:2px;}
+.demo-accounts{background:#F8FAFF;border:1px solid #DBEAFE;border-radius:10px;padding:12px;margin-bottom:16px;}
+.demo-title{font-size:10px;font-weight:700;color:#1D4ED8;text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;}
+.demo-row{display:flex;justify-content:space-between;align-items:center;font-size:11px;padding:4px 0;border-bottom:1px solid #EEF2FF;}
+.demo-row:last-child{border-bottom:none;}
+.demo-role{font-weight:700;color:#475569;width:60px;}
+.demo-email{color:#1D4ED8;font-family:monospace;}
+.demo-pw{color:#64748B;font-family:monospace;}
+.fl{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;}
+.fl label{font-size:10px;font-weight:700;color:#4B5675;text-transform:uppercase;letter-spacing:.06em;}
+.fl input{padding:10px 13px;border:1.5px solid #DBEAFE;border-radius:9px;background:#fff;color:#1A1F36;font-size:13px;font-family:inherit;transition:border .15s;}
+.fl input:focus{outline:none;border-color:#2563EB;}
+.fl input::placeholder{color:#C7D2FE;}
+#signInBtn{display:block;width:100%;padding:12px;background:linear-gradient(135deg,#2563EB,#1D4ED8);color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer;margin-top:6px;letter-spacing:.02em;transition:opacity .15s;}
+#signInBtn:hover{opacity:.9;}
+#signInBtn:disabled{opacity:.5;cursor:not-allowed;}
+.err{font-size:12px;color:#DC2626;text-align:center;margin-top:8px;display:none;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo-row">
+    <div class="logo-box"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
+    <div class="brand">Edu<span>Manage</span></div>
+  </div>
+  <div class="sub">Student Management System — sign in to continue</div>
+  <div class="role-grid">
+    <div class="rc on" onclick="pickRole('admin',this)">
+      <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="rc-n">Admin</div><div class="rc-s">Full access</div>
+    </div>
+    <div class="rc" onclick="pickRole('teacher',this)">
+      <svg viewBox="0 0 24 24" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="rc-n">Teacher</div><div class="rc-s">Classroom</div>
+    </div>
+    <div class="rc" onclick="pickRole('student',this)">
+      <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      <div class="rc-n">Student</div><div class="rc-s">Personal</div>
+    </div>
+  </div>
+  <div class="demo-accounts">
+    <div class="demo-title">Demo accounts</div>
+    <div class="demo-row"><span class="demo-role">Admin</span><span class="demo-email">admin@school.edu</span><span class="demo-pw">admin123</span></div>
+    <div class="demo-row"><span class="demo-role">Teacher</span><span class="demo-email">rajesh@school.edu</span><span class="demo-pw">teacher123</span></div>
+    <div class="demo-row"><span class="demo-role">Student</span><span class="demo-email">ananya@school.edu</span><span class="demo-pw">student123</span></div>
+  </div>
+  <div class="fl"><label>Email address</label><input type="email" id="email" value="admin@school.edu" placeholder="you@school.edu"></div>
+  <div class="fl"><label>Password</label><input type="password" id="password" value="admin123" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()"></div>
+  <div class="err" id="errMsg"></div>
+  <button id="signInBtn" onclick="doLogin()">Sign in to EduManage</button>
+</div>
+<script>
+const CREDS={admin:{email:"admin@school.edu",password:"admin123"},teacher:{email:"rajesh@school.edu",password:"teacher123"},student:{email:"ananya@school.edu",password:"student123"}};
+function pickRole(role,el){document.querySelectorAll('.rc').forEach(c=>c.classList.remove('on'));el.classList.add('on');document.getElementById('email').value=CREDS[role].email;document.getElementById('password').value=CREDS[role].password;document.getElementById('errMsg').style.display='none';}
+async function doLogin(){
+  const btn=document.getElementById('signInBtn'),err=document.getElementById('errMsg');
+  btn.disabled=true;btn.textContent='Signing in…';err.style.display='none';
+  const res=await fetch('/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:document.getElementById('email').value,password:document.getElementById('password').value})});
+  if(res.ok){window.location.href='/dashboard';}
+  else{const data=await res.json();err.textContent=data.msg||'Invalid credentials';err.style.display='block';btn.disabled=false;btn.textContent='Sign in to EduManage';}
+}
+</script>
+</body>
+</html>
